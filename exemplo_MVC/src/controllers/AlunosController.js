@@ -5,7 +5,5 @@ exports.aluno = ((req, resp)=>{
 })
 exports.alunoGetAll = ((req, resp)=>{
     const listaAlunos = new alunoModel()
-    listaAlunos.alunos.forEach(aluno => {
-        resp.send(`<h1>${aluno.nome}</h1><h1>${aluno.idade}</h1>`)        
-    });
+    resp.render("Alunos/alunosView",{lista : listaAlunos.listarAlunos})
 })
