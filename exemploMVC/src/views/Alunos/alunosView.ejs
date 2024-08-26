@@ -6,11 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h4><%= lista %></h4>
 
     <h4>Lista de Alunos:</h4>
     <ul>
+      <%console.log(lista)%>
       <% for (let i = 0; i < lista.length; i++) { %>
         <li>
           Nome: <%= lista[i].nome %>, Idade: <%= lista[i].idade %>
