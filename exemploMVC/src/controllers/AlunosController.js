@@ -14,12 +14,12 @@ exports.alunoForm = ((req, resp)=>{
 })
 exports.alunoSave = ((req, resp)=>{
     if (req.body) {
-    console.log('body',req.body)
+        
     let { nome, idade } = req.body;
     
     listaAlunos.addAluno(nome, idade);
 
-    resp.redirect('/alunos');
+    resp.redirect('/alunos/getAll');
     }else{
         resp.status(400).send('Requisição sem corpo.');
     }

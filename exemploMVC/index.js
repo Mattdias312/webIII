@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+app.use(express.urlencoded({ extended: true }));
+
 const loginRoute = require('./src/routes/loginRoute')
 app.use(loginRoute)
 const alunosRoute = require('./src/routes/AlunoRoute')
