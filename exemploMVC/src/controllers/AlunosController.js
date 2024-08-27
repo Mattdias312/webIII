@@ -10,7 +10,7 @@ exports.alunoGetAll = ((req, resp)=>{
     resp.render("Alunos/alunosView",{lista : lista})
 })
 exports.alunoForm = ((req, resp)=>{
-    resp.render("Alunos/alunosFormView",{lista : lista})
+    resp.render("Alunos/alunosFormView")
 })
 exports.alunoSave = ((req, resp)=>{
     if (req.body) {
