@@ -19,6 +19,6 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 app.set('view engine', 'ejs')
 app.set('views','./src/views')
 
-app.listen(3000,function(){
-    console.log('App rodando na porta 3000')
+app.listen(3500,function(){
+    console.log('App rodando na porta 3500')
 })

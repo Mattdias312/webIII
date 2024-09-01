@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <% if (showForm) { %>
+        <form action="/home/save" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" class="form-group" required>
+                
+                <label for="email">email:</label>
+                <input type="text" id="email" name="email" class="form-group" required>
+                
+                <button type="submit">Salvar</button>
+            </div>
+        </form>
+
+        <div>
+            <h4>Lista de Cadastros:</h4>
+                <% if (lista.length > 0) { %>
+                    <ul>
+                        <% lista.forEach(cadastro => { %>
+                            <form action="/excluir/<%= cadastro.email %>" method="POST"
+                                onsubmit="return confirm('Tem certeza que deseja excluir?');">
+                            <li><%= cadastro.nome %> - <%= cadastro.email %>
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button type="submit">Excluir</button>
+                                </li>
+                            </form>
+                        <% }) %>
+                    </ul>
+                <% } else { %>
+                    <p>Nenhum cadastro.</p>
+                <% } %>
+        </div>
+    <% } else { %>
+        <p>Conteúdo alternativo porque a condição é falsa.</p>
+    <% } %>
+</body>
+</html>
