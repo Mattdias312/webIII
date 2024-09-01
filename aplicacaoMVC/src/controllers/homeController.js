@@ -3,7 +3,8 @@ const listacadastros = new cadastroModel();
 const lista = listacadastros.listarCadastros();
 
 exports.home = (req, res) => {
-    res.render("index", { showForm: true, lista: lista });
+    console.log(lista.length)
+    res.render("index", { showForm: true, lista: lista, totalCadastro: lista.length });
 };
 
 exports.show = (req, res) => {
@@ -28,8 +29,4 @@ exports.excluirCadastro = (req, res) => {
     const { email } = req.params;
     listacadastros.removeCadastro(email);
     res.redirect('/home');
-};
-
-exports.contarEmails = (req, res) => {
-    res.json({ totalEmails: lista.length });
 };
