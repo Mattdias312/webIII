@@ -3,7 +3,6 @@ const listacadastros = new cadastroModel();
 const lista = listacadastros.listarCadastros();
 
 exports.home = (req, res) => {
-    console.log(lista.length)
     res.render("index", { showForm: true, lista: lista, totalCadastro: lista.length });
 };
 
