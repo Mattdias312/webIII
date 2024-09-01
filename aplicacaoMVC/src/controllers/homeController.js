@@ -3,18 +3,16 @@ const listacadastros = new cadastroModel();
 const lista = listacadastros.listarCadastros();
 
 exports.home = (req, res) => {
-    res.render("index", { showForm: true, lista: lista, totalCadastro: lista.length });
-};
-
-exports.show = (req, res) => {
-    res.render("index", { showForm: true });
-};
-
-exports.hide = (req, res) => {
-    res.render("index", { showForm: false });
+    /* #swagger.tags = ['home']
+       #swagger.summary = 'Mostra informações sobre Stray code, formulário e número de cadastros'
+       #swagger.description = 'Este endpoint mostra informações sobre Stray code, formulário para novos cadastros e número de usuários cadastrados*/
+    res.render("index", { lista: lista, totalCadastro: lista.length });
 };
 
 exports.save = (req, res) => {
+    /* #swagger.tags = ['home']
+       #swagger.summary = 'Mostra informações sobre Stray code, formulário e número de cadastros'
+       #swagger.description = 'Este endpoint mostra informações sobre Stray code, formulário para novos cadastros e número de usuários cadastrados*/
     if (req.body) {
         let { nome, email } = req.body;
         listacadastros.addCadastro(nome, email);

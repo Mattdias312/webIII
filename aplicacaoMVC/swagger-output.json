@@ -13,62 +13,51 @@
   "paths": {
     "/home": {
       "get": {
-        "description": "",
+        "tags": [
+          "home"
+        ],
+        "summary": "Mostra informações sobre Stray code, formulário e número de cadastros",
+        "description": "Este endpoint mostra informações sobre Stray code, formulário para novos cadastros e número de usuários cadastrados",
         "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
-    "/home/show": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
-    "/home/hide": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
+          "400": {
+            "description": "Bad Request"
           }
         }
       }
     },
     "/home/save": {
       "post": {
-        "description": "",
+        "tags": [
+          "home"
+        ],
+        "summary": "Mostra informações sobre Stray code, formulário e número de cadastros",
+        "description": "Este endpoint mostra informações sobre Stray code, formulário para novos cadastros e número de usuários cadastrados",
         "responses": {
-          "400": {
-            "description": "Bad Request"
-          }
-        },
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "nome": {
-                    "example": "any"
-                  },
-                  "email": {
-                    "example": "any"
-                  }
-                }
-              }
-            }
+          "default": {
+            "description": ""
           }
         }
       }
     },
     "/excluir/{email}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
       "delete": {
         "description": "",
         "parameters": [
