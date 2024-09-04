@@ -12,12 +12,12 @@
 </head>
 <body>    
         <form action="/home/save" method="POST">
-            <div class="form-group">
+            <div id="Formulário para cadastro" class="form-group">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" class="form-group" required>
+                <input type="text" id="nome" name="nome" class="form-group" placeholder="Nome" required>
                 
-                <label for="email">email:</label>
-                <input type="text" id="email" name="email" class="form-group" required>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" class="form-group" placeholder="Email" required>
                 
                 <button type="submit">Salvar</button>
             </div>
@@ -28,10 +28,8 @@
                 <% if (lista.length > 0) { %>
                     <ul>
                         <% lista.forEach(cadastro => { %>
-                            <form action="/excluir/<%= cadastro.email %>" method="POST"
-                                onsubmit="return confirm('Tem certeza que deseja excluir?');">
-                            <li><%= cadastro.nome %> - <%= cadastro.email %>
-                                    <input type="hidden" name="_method" value="DELETE">
+                            <form action="/excluir/<%= cadastro.email %>?_method=DELETE" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir?');">
+                                <li><%= cadastro.nome %> - <%= cadastro.email %>
                                     <button type="submit">Excluir</button>
                                 </li>
                             </form>

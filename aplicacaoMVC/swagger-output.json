@@ -25,6 +25,20 @@
         }
       }
     },
+    "/qtd": {
+      "get": {
+        "tags": [
+          "home"
+        ],
+        "summary": "Mostra informações sobre Stray code, formulário e número de cadastros",
+        "description": "Este endpoint mostra informações sobre Stray code, formulário para novos cadastros e número de usuários cadastrados",
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
     "/home/save": {
       "post": {
         "tags": [
@@ -40,28 +54,6 @@
       }
     },
     "/excluir/{email}": {
-      "post": {
-        "tags": [
-          "cadastro"
-        ],
-        "summary": "chama método para excluir usuário",
-        "description": "Este endpoint pega o email do usuário para excluir cadastro",
-        "parameters": [
-          {
-            "name": "email",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      },
       "delete": {
         "tags": [
           "cadastro"

@@ -30,3 +30,7 @@ exports.excluirCadastro = (req, res) => {
     listacadastros.removeCadastro(email);
     res.redirect('/home');
 };
+
+exports.qtd = (req, res) => {
+    res.render("index", { lista: lista, totalCadastro: lista.length });
+}
