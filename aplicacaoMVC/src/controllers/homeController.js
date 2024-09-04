@@ -6,7 +6,7 @@ exports.home = (req, res) => {
     /* #swagger.tags = ['home']
        #swagger.summary = 'Mostra informações sobre Stray code, formulário e número de cadastros'
        #swagger.description = 'Este endpoint mostra informações sobre Stray code, formulário para novos cadastros e número de usuários cadastrados*/
-    res.render("index", { lista: lista, totalCadastro: lista.length });
+    res.render("index", { paginaAtual: 'home', lista: lista, totalCadastro: lista.length });
 };
 
 exports.save = (req, res) => {
@@ -28,9 +28,13 @@ exports.excluirCadastro = (req, res) => {
        #swagger.description = 'Este endpoint pega o email do usuário para excluir cadastro*/
     const { email } = req.params;
     listacadastros.removeCadastro(email);
-    res.redirect('/home');
+    res.redirect('/admin');
 };
 
 exports.qtd = (req, res) => {
     res.render("index", { lista: lista, totalCadastro: lista.length });
+}
+
+exports.admin = (req,res) => {
+    res.render("index",{ paginaAtual: 'admin', lista: lista, totalCadastro: lista.length })
 }

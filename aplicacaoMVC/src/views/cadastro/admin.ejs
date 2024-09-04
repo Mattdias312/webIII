@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h4>Lista de Cadastros:</h4>
+                <% if (lista.length > 0) { %>
+                    <ul>
+                        <% lista.forEach(cadastro => { %>
+                            <form action="/admin/excluir/<%= cadastro.email %>?_method=DELETE" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir?');">
+                                <li><%= cadastro.nome %> - <%= cadastro.email %>
+                                    <button class="btn btn-danger" type="submit">Excluir</button>
+                                </li>
+                            </form>
+                        <% }) %>
+                    </ul>
+                    <h1>Total de cadastros: <%= totalCadastro %></h1>
+                <% } else { %>
+                    <p>Nenhum cadastro.</p>
+                <% } %>
+        </div>
+
+    </main>
+    
+</body>
+</html>
