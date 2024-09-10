@@ -39,6 +39,16 @@
         }
       }
     },
+    "/admin": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
     "/home/save": {
       "post": {
         "tags": [
@@ -53,7 +63,7 @@
         }
       }
     },
-    "/excluir/{email}": {
+    "/admin/excluir/{email}": {
       "delete": {
         "tags": [
           "cadastro"
