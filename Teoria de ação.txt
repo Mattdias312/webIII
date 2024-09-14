@@ -1,0 +1,112 @@
+Sistema de biblioteca
+
+1 formular intenção imediata
+ usuário quer consultar informações sobre um livro específico no sistema de biblioteca.
+
+2 determinar plano de ações
+
+abrir o sistema
+escolher o livro para pesquisar
+fazer a pesquisa do livro
+
+3 executar ações
+clicar no ícone de busca
+digitar nome do livro
+apertar enter para pesquisar
+
+
+
+Tirar foto e postar na rede socail
+
+
+-----------------------------------------------------------------------------------------------
+
+1. Consulta sobre um livro em um sistema de biblioteca
+1. Formular Intenção Imediata
+
+Objetivo: O usuário quer consultar informações sobre um livro específico no sistema de biblioteca.
+Etapas dos Golfos da Execução:
+
+Estabelecer Objetivo: O usuário pretende encontrar detalhes sobre um livro específico.
+Formular Intenção de Ação: O usuário decide usar o sistema de biblioteca para buscar o livro desejado.
+Golfos da Execução:
+
+Golfo na Formulação da Intenção: Se o sistema de biblioteca não for claro sobre como realizar buscas, o usuário pode ter dificuldades em formular a intenção corretamente. O usuário deve saber que o sistema permite buscas e quais funcionalidades específicas ele oferece.
+2. Determinar Plano de Ações
+
+Abrir a interface de busca no sistema de biblioteca
+Selecionar os critérios de busca (título, autor, ISBN)
+Inserir os dados do livro para a busca
+Etapas dos Golfos da Execução:
+
+Escolher Ações e Estratégias: O usuário decide as ações necessárias para realizar a consulta, como acessar a interface de busca e definir os critérios.
+Golfos da Execução:
+
+Golfo na Determinação do Plano: Se a interface de busca não for intuitiva ou os critérios não forem claros, o usuário pode ter dificuldades em determinar como buscar o livro. A dificuldade pode surgir se a funcionalidade de busca não for óbvia ou se houver muitas opções confusas.
+3. Executar Ações
+
+Clicar no ícone de busca ou na área de pesquisa
+Inserir o título, autor ou ISBN do livro
+Clicar no botão de pesquisa
+Etapas dos Golfos da Execução e da Avaliação:
+
+Executar Ações: O usuário realiza ações específicas para buscar o livro.
+Golfos da Execução:
+
+Clicar no ícone de busca: Se o ícone não for facilmente identificável, o usuário pode não encontrar a função de busca.
+Inserir dados: Se o sistema não aceitar o formato correto ou se não houver feedback sobre o erro, pode haver um golfo na execução.
+Golfos da Avaliação:
+
+Perceber o Estado do Sistema: O usuário precisa ver resultados relevantes da busca para confirmar que a ação foi bem-sucedida.
+Interpretar Resultado: O usuário deve interpretar se os resultados atendem à consulta feita.
+Avaliar se o Objetivo foi Atingido: O usuário avalia se encontrou as informações desejadas sobre o livro.
+Golfos da Avaliação:
+
+Golfo na Avaliação: Se os resultados não forem claros ou se o sistema não fornecer uma confirmação adequada (por exemplo, se o livro não for encontrado ou se houver um erro sem mensagem clara), o usuário pode não conseguir avaliar corretamente se o objetivo foi alcançado.
+2. Tirar uma foto com o celular e postar em uma rede social
+1. Formular Intenção Imediata
+
+Objetivo: O usuário deseja tirar uma foto e compartilhá-la em uma rede social.
+Etapas dos Golfos da Execução:
+
+Estabelecer Objetivo: O usuário quer capturar uma imagem e publicá-la.
+Formular Intenção de Ação: O usuário decide usar o aplicativo de câmera para tirar a foto e o aplicativo de rede social para postar.
+Golfos da Execução:
+
+Golfo na Formulação da Intenção: Se o usuário não sabe que precisa usar dois aplicativos (câmera e rede social), ou se a função de compartilhamento não é clara, pode haver uma confusão sobre como proceder.
+2. Determinar Plano de Ações
+
+Abrir o aplicativo de câmera
+Capturar a foto
+Abrir o aplicativo de rede social
+Postar a foto na rede social
+Etapas dos Golfos da Execução:
+
+Escolher Ações e Estratégias: O usuário decide as ações necessárias, como abrir a câmera, capturar a imagem e depois usar a rede social para postagem.
+Golfos da Execução:
+
+Golfo na Determinação do Plano: Se a transição entre aplicativos não for clara ou se o usuário não souber como acessar o compartilhamento de mídia, pode haver um golfo na determinação do plano. A falta de instruções sobre como transferir a foto da câmera para a rede social pode causar confusão.
+3. Executar Ações
+
+Abrir o aplicativo de câmera
+Tirar a foto
+Abrir o aplicativo de rede social
+Selecionar a opção para criar um novo post
+Adicionar a foto ao post
+Publicar o post
+Etapas dos Golfos da Execução e da Avaliação:
+
+Executar Ações: O usuário realiza as ações específicas para capturar e postar a foto.
+Golfos da Execução:
+
+Abrir o aplicativo de câmera e tirar a foto: Se a interface da câmera não for intuitiva ou se o processo de tirar a foto não for claro, o usuário pode ter dificuldades.
+Abrir o aplicativo de rede social e criar o post: Se a navegação e a criação de um post não forem óbvias, pode haver um golfo na execução.
+Golfos da Avaliação:
+
+Perceber o Estado do Sistema: O usuário precisa ver a foto publicada para confirmar que a ação foi bem-sucedida.
+Interpretar Resultado: O usuário deve verificar se a foto foi postada corretamente e está visível para os amigos ou seguidores.
+Avaliar se o Objetivo foi Atingido: O usuário avalia se a foto foi publicada de acordo com a intenção inicial.
+Golfos da Avaliação:
+
+Golfo na Avaliação: Se o feedback da rede social não for claro (por exemplo, se não houver uma confirmação de que a foto foi postada ou se o usuário não puder ver a foto no perfil), pode haver um golfo na avaliação.
+Resumo: Para minimizar os golfos em ambas as situações, é crucial que o sistema ou aplicativo ofereça uma interface clara e um feedback eficaz. Isso garante que os usuários possam facilmente formular suas intenções, determinar planos de ação apropriados e executar ações de maneira eficaz, bem como avaliar se seus objetivos foram alcançados.
