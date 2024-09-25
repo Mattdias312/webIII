@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const userRoute = require('./src/routes/userRoute');
+const projectRoute = require('./src/routes/projectRoute');
 const mongoose = require('mongoose');
 
 let url = 'mongodb://localhost:27017/Fatec';
@@ -14,6 +15,7 @@ db.on('error',console.error.bind(console, 'error ao conectar com a base de dados
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extendde: false}));
 app.use(userRoute);
+app.use(projectRoute);
 
 app.listen(3000, () => {
     console.log('Servidor em execução na porta 3000');
