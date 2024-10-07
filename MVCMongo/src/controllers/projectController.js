@@ -1,6 +1,9 @@
 var Project = require('../models/projectModel');
 
 exports.getProject = async function (req, res){
+    /* #swagger.tags = ['Project']
+       #swagger.summary = 'Lista todos os projetos cadastrados'
+       #swagger.description = 'Este endpoint lista todos os projetos cadastrados contendo título, descrição e autor'*/
     try{
         const result = await Project.find().populate('assignedTo');
         res.status(200).json(result)
@@ -10,6 +13,9 @@ exports.getProject = async function (req, res){
 };
 
 exports.create = function (req, res){
+    /* #swagger.tags = ['Project']
+       #swagger.summary = 'Cadastra um projeto'
+       #swagger.description = 'Cria um cadastro adicionando um título, descrição e autor'*/
     let project = new Project(
         {
             title: req.body.title,
@@ -25,6 +31,9 @@ exports.create = function (req, res){
 };
 
 exports.details = async function (req, res) {
+    /* #swagger.tags = ['Project']
+       #swagger.summary = 'Pesquisa um projeto'
+       #swagger.description = 'Pesquisa um projeto pelo id'*/
     try {
         const result = await Project.findById(req.params.id);
         res.status(200).json(result)
@@ -34,6 +43,9 @@ exports.details = async function (req, res) {
 };
 
 exports.updateProject = async function (req, res) {
+    /* #swagger.tags = ['Project']
+       #swagger.summary = 'Altera informções de um projeto'
+       #swagger.description = 'Altera informações de um projeto passando o id'*/
     try {
         const updatedProject = await Project.findByIdAndUpdate(req.params.id, req.body, { new: true });
         if (!updatedProject) {
@@ -46,6 +58,9 @@ exports.updateProject = async function (req, res) {
 };
 
 exports.deleteProject = async function (req, res) {
+    /* #swagger.tags = ['Project']
+       #swagger.summary = 'Deleta um projeto'
+       #swagger.description = 'Deleta um projeto pelo id'*/
     try {
         const deletedProject = await Project.findByIdAndDelete(req.params.id);
         if (!deletedProject) {
