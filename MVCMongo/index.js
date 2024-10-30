@@ -17,6 +17,10 @@ app.use(bodyParser.urlencoded({extendde: false}));
 app.use(userRoute);
 app.use(projectRoute);
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger-output.json');
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 app.listen(3000, () => {
     console.log('Servidor em execução na porta 3000');
 });
